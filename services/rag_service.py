@@ -7,11 +7,13 @@ import magic
 from db.repos.embedding_repo import EmbeddingRepo
 from db.repos.rag_source_repo import RagSourceRepo
 from services.temp_file_service import TempFilesService
-from services.text_sefrom langchain_community.document_loaders import Docx2txtLoader, PyPDFLoader, TextLoader, JSONLoader
-rvice import TextService
+from services.text_service import TextService
+from langchain_community.document_loaders import Docx2txtLoader, PyPDFLoader, TextLoader, JSONLoader
 from utils.custom_loaders import ExcelLoader
 
 logger = logging.getLogger(__name__)
+
+
 class RagArchiveProcessor:
     """Сервис для обработки архивов и создания векторных представлений."""
 
